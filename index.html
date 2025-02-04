@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Instagram Post</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container"> <!-- header  -->
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="/icons/instagram-brands-solid.svg" alt="" width="30" height="24"
+          class="d-inline-block align-text-top">
+        <strong>Instagram</strong>
+      </a>
+
+      <ul class="nav justify-content-end">
+        <li class="nav-item m-1 ">
+          <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Create new post
+          </button>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="message-text" class="col-form-label">Caption:</label>
+                      <textarea class="form-control" id="message-text"
+                        placeholder="Add the caption of your post here"></textarea>
+                      <button type="button" class="btn btn-secondary">Photo</button>
+                      <button type="button" class="btn btn-secondary">Geo</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-success">Publish</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item m-1">
+          <div class="btn-group">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+              data-bs-display="static" aria-expanded="false">
+              <img src="/icons/gear-solid.svg" alt="gear" style="height: 15px;">
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Accesibility</a></li>
+              <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" style="color: red;" href="#">Log out</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+  </div>
+  </nav>
+  <div class="container "> <!-- header -->
+
+    <ul class="nav nav-pills p-2 justify-content-center" id="pills-tab" role="tablist"> <!-- tabs -->
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+          type="button" style="padding: 0%;" role="tab" aria-controls="pills-home" aria-selected="true"><img
+            src="/icons/apps_16dp_UNDEFINED_FILL0_wght400_GRAD0_opsz20.png" alt="" style="height: 30px;"></button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link " id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+          type="button" style="padding: 0%;" role="tab" aria-controls="pills-profile" aria-selected="false"><img
+            src="/icons/check_box_outline_blank_24dp_UNDEFINED_FILL0_wght400_GRAD0_opsz24.png" style="height: 30px;">
+        </button>
+      </li> <!-- tabs -->
+
+    </ul>
+    <div class="container  d-flex justify-content-center"> <!-- grid -->
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane  fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card ">
+                <img src="https://cdn.pixabay.com/photo/2023/12/07/11/11/girl-8435339_1280.png" class="img-fluid"
+                  alt="night-girl">
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2025/01/29/19/15/dragon-9368591_640.jpg" class="img-fluid"
+                  alt="dragon">
+              </div>
+            </div>
+            <div class="col">
+              <div class="card ">
+                <img src="https://cdn.pixabay.com/photo/2025/01/30/13/03/goldfinch-9370140_640.jpg" class="img-fluid"
+                  alt="bird">
+              </div>
+            </div>
+            <div class="col">
+              <div class="card ">
+                <img src="https://cdn.pixabay.com/photo/2023/10/03/09/19/sunrise-8290940_640.jpg" class="img-fluid"
+                  alt="lake">
+              </div>
+            </div>
+            <div class="col">
+              <div class="card ">
+                <img src="https://cdn.pixabay.com/photo/2024/02/21/14/14/mountains-8587802_640.jpg" class="img-fluid"
+                  alt="mountain">
+              </div>
+            </div>
+            <div class="col">
+              <div class="card ">
+                <img src="https://cdn.pixabay.com/photo/2019/07/21/21/29/path-4353699_640.jpg" class="img-fluid"
+                  alt="way">
+              </div>
+            </div>
+            <div class="col">
+              <div class="card ">
+                <img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_640.jpg" class="img-fluid"
+                  alt="program">
+              </div>
+            </div>
+            <div class="col">
+              <div class="card ">
+                <img src="https://cdn.pixabay.com/photo/2023/09/25/03/27/ai-generated-8274116_640.png" class="img-fluid"
+                  alt="lizard">
+              </div>
+            </div>
+            <div class="col">
+              <div class="card ">
+                <img src="https://cdn.pixabay.com/photo/2024/06/15/20/24/groovebox-8832172_1280.png" class="img-fluid"
+                  alt="Sampler">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- grids -->
+    <div class="tab-content" id="pills-tabContent"> <!-- columns -->
+      <div class="tab-pane  fade " id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+        <div class="container" style="max-width:400px;">
+
+          <div class="col-12 m-4">
+            <div class="card">
+              <div class="card-header d-flex " style="justify-content:space-between;">
+                <div class="header1">
+                  <h4>Anocheciendo</h4>
+                </div>
+                <div class="header2">
+                  <h6>23/1</h6>
+                </div>
+              </div>
+              <img src="https://cdn.pixabay.com/photo/2023/12/07/11/11/girl-8435339_1280.png" class="img-card-top"
+                alt="night-girl">
+              <div class="card-body">
+                <p class="card-text"><strong> 1233 likes</strong>
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, sint? Cumque, ad aut. Obcaecati
+                  quasi expedita illum? </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 m-4">
+            <div class="card">
+              <div class="card-header d-flex " style="justify-content:space-between;">
+                <div class="header1">
+                  <h4>Dragon`s lair</h4>
+                </div>
+                <div class="header2">
+                  <h6>12/3</h6>
+                </div>
+              </div>
+              <img src="https://cdn.pixabay.com/photo/2025/01/29/19/15/dragon-9368591_640.jpg" class="img-card-top"
+                alt="dragon">
+              <div class="card-body">
+                <p class="card-text"><strong> 1030 likes</strong>
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, sint? Cumque, ad aut. Obcaecati
+                  quasi expedita illum? </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 m-4">
+            <div class="card">
+              <div class="card-header d-flex " style="justify-content:space-between;">
+                <div class="header1">
+                  <h4>Jilguerillo</h4>
+                </div>
+                <div class="header2">
+                  <h6>07/8</h6>
+                </div>
+              </div>
+              <img src="https://cdn.pixabay.com/photo/2025/01/30/13/03/goldfinch-9370140_640.jpg" class="img-card-top"
+                alt="bird">
+              <div class="card-body">
+                <p class="card-text"><strong> 1344 likes</strong>
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, sint? Cumque, ad aut. Obcaecati
+                  quasi expedita illum? </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 m-4">
+            <div class="card">
+              <div class="card-header d-flex " style="justify-content:space-between;">
+                <div class="header1">
+                  <h4>¿un baño?</h4>
+                </div>
+                <div class="header2">
+                  <h6>27/12</h6>
+                </div>
+              </div>
+              <img src="https://cdn.pixabay.com/photo/2023/10/03/09/19/sunrise-8290940_640.jpg" class="img-card-top"
+                alt="lake">
+              <div class="card-body">
+                <p class="card-text"><strong> 546 likes</strong>
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, sint? Cumque, ad aut. Obcaecati
+                  quasi expedita illum? </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 m-4">
+            <div class="card">
+              <div class="card-header d-flex " style="justify-content:space-between;">
+                <div class="header1">
+                  <h4>Cualquiera sube...</h4>
+                </div>
+                <div class="header2">
+                  <h6>13/6</h6>
+                </div>
+              </div>
+              <img src="https://cdn.pixabay.com/photo/2024/02/21/14/14/mountains-8587802_640.jpg" class="img-card-top"
+                alt="mountain">
+              <div class="card-body">
+                <p class="card-text"><strong> 1657 likes</strong>
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, sint? Cumque, ad aut. Obcaecati
+                  quasi expedita illum? </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 m-4">
+            <div class="card">
+              <div class="card-header d-flex " style="justify-content:space-between;">
+                <div class="header1">
+                  <h4>¿a donde llegará?</h4>
+                </div>
+                <div class="header2">
+                  <h6>04/3</h6>
+                </div>
+              </div>
+              <img src="https://cdn.pixabay.com/photo/2019/07/21/21/29/path-4353699_640.jpg" class="img-card-top"
+                alt="way">
+              <div class="card-body">
+                <p class="card-text"><strong> 893 likes</strong>
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, sint? Cumque, ad aut. Obcaecati
+                  quasi expedita illum? </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 m-4">
+            <div class="card">
+              <div class="card-header d-flex " style="justify-content:space-between;">
+                <div class="header1">
+                  <h4>Con suerte compila...</h4>
+                </div>
+                <div class="header2">
+                  <h6>18/9</h6>
+                </div>
+              </div>
+              <img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_640.jpg" class="img-card-top"
+                alt="program">
+              <div class="card-body">
+                <p class="card-text"><strong> 134 likes</strong>
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, sint? Cumque, ad aut. Obcaecati
+                  quasi expedita illum? </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 m-4">
+            <div class="card">
+              <div class="card-header d-flex " style="justify-content:space-between;">
+                <div class="header1">
+                  <h4>Old School</h4>
+                </div>
+                <div class="header2">
+                  <h6>23/9</h6>
+                </div>
+              </div>
+              <img src="https://cdn.pixabay.com/photo/2024/06/15/20/24/groovebox-8832172_1280.png" class="img-card-top"
+                alt="sampler">
+              <div class="card-body">
+                <p class="card-text"><strong> 144 likes</strong>
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, sint? Cumque, ad aut. Obcaecati
+                  quasi expedita illum? </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 m-4">
+            <div class="card">
+              <div class="card-header d-flex " style="justify-content:space-between;">
+                <div class="header1">
+                  <h4>Mira que cuqui</h4>
+                </div>
+                <div class="header2">
+                  <h6>03/3</h6>
+                </div>
+              </div>
+              <img src="https://cdn.pixabay.com/photo/2023/09/25/03/27/ai-generated-8274116_640.png"
+                class="img-card-top" alt="lizard">
+              <div class="card-body">
+                <p class="card-text"><strong> 893 likes</strong>
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, sint? Cumque, ad aut. Obcaecati
+                  quasi expedita illum? </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <!-- colums -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
